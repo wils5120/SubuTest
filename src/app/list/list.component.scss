@@ -11,6 +11,31 @@
                 font-size:15px;
             }
         }
+        .disp-img{
+            position: relative;
+            .img-table{
+                border-radius: 100%;
+                position: absolute;
+            }
+            .frist{
+                left: 0px;
+                @media (min-width: 770px){
+                    left: 10px;
+                }
+            }
+            .mov{
+                left: 10px;
+                @media (min-width: 770px){
+                    left: 21px;
+                }
+            }
+            .mov-th{
+                left: 17px;
+                @media (min-width: 770px){
+                    left: 34px;
+                }
+            }
+        }
     }
     .buttonFilter{
         width: 25%;
