@@ -1,0 +1,21 @@
+.info{
+    .active-color{
+        color:#9d9d9d;
+        .w-90{
+            width: 90%;
+        }
+        :hover{
+            background: rgb(0 123 255 / 10%);
+            color: #007bff;
+        }
+    }
+    .text{
+        font-size: 9px;
+        @media (min-width:770px) {
+            font-size:18px;
+        }
+    }
+    .line{
+        width: 160px;
+    }
+}

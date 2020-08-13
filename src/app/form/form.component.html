@@ -1,0 +1,86 @@
+<div class="form-container pt-2 bg-white">
+    <form class="mt-5 ml-4" [formGroup]="contactForm" (ngSubmit)="create()">
+        <div class="pl-4 pr-4">
+            <div>
+                <span class="textPri mr-5">
+                    DATOS
+                </span>
+                <label class="switch ml-mx">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="d-block mr-3 mt-4">
+                <label class="text-color">Temperatura principal °C</label>
+                <div class="d-flex">
+                    <input class="form-control intpusRads" type="text" formControlName="temp" placeholder="">
+                    <span class="text-color textInter mt-2 mr-1 ml-1">To</span>
+                    <input class="form-control intpusRads" type="text" formControlName="tempT" placeholder="">
+                </div>
+                <div class="alert-danger" *ngIf="temp.invalid && (temp.dirty || temp.touched)">
+                    <div class="container-error-message">
+                        Temperatura Requerida
+                    </div>
+                </div>
+            </div>
+            <div class="d-block mr-3 mt-5">
+                <label class="text-color">BTD, °C</label>
+                <div class="d-flex">
+                    <input class="form-control" type="text" formControlName="btd" placeholder="">
+                    <span class="text-color textInter mt-2 mr-1 ml-1">To</span>
+                    <input class="form-control" type="text" formControlName="btdT" placeholder="">
+                </div>
+                <div class="alert-danger" *ngIf="btd.invalid && (btd.dirty || btd.touched)">
+                    <div class="container-error-message">
+                        BTD Requerido
+                    </div>
+                </div>
+            </div>
+            <div class="d-block mr-3 mt-5">
+                <label>Placa</label>
+                <input class="form-control intpusRads" type="text" formControlName="placa" placeholder="">
+                <div class="alert-danger">
+                    <div class="container-error-message" *ngIf="placa.invalid && (placa.dirty || placa.touched)">
+                        Placa requerida
+                    </div>
+                </div>
+            </div>
+            <div class="d-block mr-3 mt-5">
+                <label for="exampleFormControlSelect1">Nombre taller</label>
+                <select class="form-control intpusRads" id="exampleFormControlSelect1">
+                    <option> </option>
+                    <option>Electricistas Caribe</option>
+                    <option>Repuestos de todas las marcas</option>
+                    <option>Exostos S.A.S</option>
+                </select>
+            </div>
+            <div class="d-block mr-3 mt-5">
+                <label>N° Siniestro</label>
+                <input class="form-control intpusRads" type="text" formControlName="siniestro" placeholder="">
+                <div class="alert-danger" *ngIf="siniestro.invalid && (siniestro.dirty || siniestro.touched)">
+                    <div class="container-error-message">
+                        N° Siniestro requerido
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <label class="h4 w-80">Bateria</label>
+                <fa-icon [icon]="arrowIcon" class="pt-2 ml-5"></fa-icon>
+            </div>
+            <div class="d-flex mt-5">
+                <div class="mt-4 mr-4 pr-3">
+                    <label class="form-check-label" for="exampleCheck1">Carro de compras</label>
+                    <input type="checkbox" class="form-check-input ml-2" formControlName="buy" id="exampleCheck1">
+                </div>
+                <div class="mt-4 mr-4 pr-3 ml-5">
+                    <label class="form-check-label" for="exampleCheck1">Mano de obra</label>
+                    <input type="checkbox" class="form-check-input ml-2" formControlName="work" id="exampleCheck2">
+                </div>
+            </div>
+            <div class="mt-5 d-flex mb-5 pt-3 pb-5">
+                <button type="submit" class="btn btn-light text-dark w-50 btn-send mr-3">Cancelar</button>
+                <button type="submit" class="btn btn-primary w-50 btn-send mr-3">Guardar</button>
+            </div>
+        </div>
+    </form>
+</div>

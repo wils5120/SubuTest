@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="imgMicro ml-4 mr-4">
+        <img [src]="'assets/img/micro.PNG'" alt="img" class="img">
+    </div>
+    <div class="collapse navbar-collapse navMen" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-20">
+            <li class="nav-item desk-mv">
+                <fa-icon [icon]="iconLeft" [styles]="{'color': 'silver'}" size="lg"></fa-icon>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 w-formNav">
+            <input class="form-control  bg-light mv-w" type="search" placeholder="Buscar..." aria-label="Search">
+            <div class="iconSerch">
+                <fa-icon [icon]="serchIcon" [styles]="{'color': '#9d9d9d'}" size="lg"></fa-icon>
+            </div>
+        </form>
+        <ul class="navbar-nav mt-2 w-38 mt-lg-0">
+            <li class="nav-item active mr-5 mt-3  frist-li">
+                <fa-icon [icon]="userIcon" [styles]="{'color': '#9d9d9d'}" size="lg"></fa-icon>
+            </li>
+            <li class="nav-item mr-5 mt-3 li-space">
+                <fa-icon [icon]="bellIcon" [styles]="{'color': '#9d9d9d'}" size="lg"></fa-icon>
+            </li>
+            <li class="nav-item mr-5 mt-3 li-space">
+                <fa-icon [icon]="questionIcon" [styles]="{'color': '#9d9d9d'}" size="lg"></fa-icon>
+            </li>
+            <li class="nav-item d-flex li-space mt-2">
+                <div class="imgProfile mt-1">
+                    <img [src]="'assets/img/emoji.png'" class="imgs">
+                </div>
+                <a class="nav-link mt-1 w-100 ml-2" href="#">Andres Figueroa</a>
+                <fa-icon [icon]="arrowIcon" class="pt-2 ml-2"></fa-icon>
+            </li>
+        </ul>
+    </div>
+</nav>

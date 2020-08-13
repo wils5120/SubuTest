@@ -1,0 +1,53 @@
+.navbar{
+    .imgMicro{
+        width: 25px;
+        .img{
+            width: 100%;
+        }
+    }
+
+    .navMen{
+        .desk-mv{
+            @media (min-width:770px) {
+                margin-left: 120px;
+            }
+        }
+        .w-formNav{
+            width: 100%;
+            @media (min-width:770px) {
+                width: 50%;
+            }
+            .mv-w{
+                width: 95%;
+            }
+            .iconSerch{
+                position: relative;
+                right: 34px;
+            }
+        }
+        .imgProfile{
+            width: 38px;
+            border-radius: 100%;
+            .imgs{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .w-20{
+            width: 20%;
+        }
+        .w-38{
+            width: 42%;
+        }
+        .frist-li{
+            @media (min-width:770px) {
+                margin-left: 70px;
+            }
+        }
+        .li-space{
+            @media (min-width:770px) {
+                margin-left: 10px;
+            }
+        }
+    }
+}

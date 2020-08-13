@@ -1,0 +1,43 @@
+<div class="content bg-white mt-5 list mg-t">
+    <div class="card-body">
+        <div class="w-100 text-right mb-2">
+            <button class="btn  buttonFilter">
+                Filter
+                <fa-icon [icon]="optionsIcon" class="ml-3" [styles]="{'color': '#9d9d9d'}" size="lg">
+                </fa-icon>
+            </button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col" class="text-table">#</th>
+                    <th scope="col" class="text-table">Proyecto</th>
+                    <th scope="col" class="text-table">Equipo</th>
+                    <th scope="col" class="text-table">Costo de proyecto</th>
+                    <th scope="col" class="text-table">Estado</th>
+                    <th scope="col" class="text-table">Pago</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td scope="row" class="pt-3" class="text-table">1</td>
+                    <td class="pt-3" class="text-table">FHV</td>
+                    <td class="pt-3" class="text-table">imagenes</td>
+                    <td class="pt-3" class="text-table">$34.220 USD</td>
+                    <td>
+                        <div>
+                            <button class="btn color-but text-table">Completado</button>
+                        </div>
+                    </td>
+                    <td class="pt-3">
+                        <div>
+                            <fa-icon [icon]="cuadroIcon" [styles]="{'color': 'rgb(43 186 43 / 77%)'}" size="sm">
+                            </fa-icon>
+                            <span class="text-table">Pagado</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
